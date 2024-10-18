@@ -1,0 +1,109 @@
+/* Mengatur style dasar untuk seluruh dokumen */
+body {
+  font-family: 'Times New Roman', Times, serif;/* Mengatur jenis font */
+  margin: 0; /* Menghilangkan margin default */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+header {
+  background-color: #192552; /* Warna latar belakang navbar */
+  padding: 10px 20px; /* Jarak dalam navbar */
+  position: fixed; /* Membuat navbar tetap di atas */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  width: 100%; /* Mengatur lebar navbar 100% */
+  z-index: 1000; /* Menempatkan navbar di atas konten lainnya */
+}
+
+nav {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+}
+
+.logo-container {
+  margin-right: 20px; /* Jarak antara logo dan judul */
+}
+
+.title-container {
+  margin-right: 400px; /* Jarak antara judul dan item navbar */
+}
+
+nav h1 {
+  font-size: 20px; /* Ukuran font untuk judul */
+  margin: 0; /* Menghilangkan margin default */
+  color: white; /* Warna teks judul */
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan bullet pada daftar */
+  padding: 0; /* Menghilangkan padding default */
+  margin: 0; /* Menghilangkan margin default */
+  display: flex; /* Menjadikan menu item sejajar secara horizontal */
+}
+
+nav li {
+  margin: 0 15px; /* Jarak antara item menu */
+}
+
+nav a {
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  color: white; /* Warna teks tautan */
+  font-weight: bold; /* Menggunakan huruf tebal untuk tautan */
+}
+
+nav a:hover {
+  color: black; /* Mengubah warna saat hover */
+}
+
+/* Memberikan padding pada konten agar tidak tertutup navbar */
+.content {
+  padding-top: 110px; /* Menambahkan jarak untuk menghindari tumpang tindih dengan navbar */
+  border-bottom: 5px solid #d2e0fb; /* Garis batas bawah konten */
+  padding-left: 10px; /* Jarak dalam konten di sebelah kiri */
+  border-left: 5px solid #192552; /* Garis batas kiri konten */
+  border-right: 5px solid #192552; /* Garis batas kanan konten */
+  background-color: #d2e0fb; /* Warna latar belakang konten */
+}
+
+/* Styling untuk galeri */
+.gallery {
+  display: flex; /* Menggunakan flexbox untuk galeri */
+  flex-wrap: wrap; /* Membuat barisan baru otomatis */
+  justify-content: space-between; /* Menjaga jarak antar item */
+  margin-top: 20px; /* Jarak atas galeri */
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.33% - 10px); /* Mengatur lebar item galeri menjadi 1/3 dari container */
+  margin-bottom: 15px; /* Jarak antar baris */
+  margin-right: 15px; /* Jarak antara item galeri */
+  border: 2px solid #192552; /* Menambahkan border */
+  border-radius: 8px; /* Sudut membulat */
+  padding: 10px; /* Ruang di dalam border */
+  background-color: #8eaccd; /* Warna latar belakang item galeri */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek kedalaman */
+}
+
+.gallery-item figure {
+  margin: 0; /* Menghilangkan margin pada figure */
+}
+
+.gallery-item img {
+  width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
+  height: auto; /* Mengatur tinggi gambar otomatis */
+}
+
+.gallery-item figcaption {
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+  margin-top: 10px; /* Jarak atas untuk figcaption */
+  font-style: italic; /* Mengatur gaya font menjadi italic */
+}
+
+/* Footer styling */
+footer {
+  background-color: #192552; /* Warna latar belakang footer */
+  color: white; /* Warna teks footer */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+  padding: 10px 0; /* Jarak dalam footer */
+  margin-top: auto; /* Mengatur margin atas otomatis */
+  font-size: 0.9em; /* Ukuran font untuk footer */
+}
