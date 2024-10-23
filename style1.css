@@ -1,104 +1,126 @@
-/* Mengatur style dasar untuk seluruh dokumen */
+/* Gaya Umum */
 body {
-  font-family: 'Times New Roman', Times, serif;/* Mengatur jenis font */
-  margin: 0; /* Menghilangkan margin default */
-  padding: 0; /* Menghilangkan padding default */
+  font-family: Arial, sans-serif; /* Menetapkan jenis huruf untuk body */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  background-color: #f4f4f4; /* Menetapkan warna latar belakang */
 }
 
+/* Navbar dan Header Tetap */
 header {
-  background-color: #192552; /* Warna latar belakang navbar */
-  padding: 10px 20px; /* Jarak dalam navbar */
-  position: fixed; /* Membuat navbar tetap di atas */
-  top: 0; /* Menempatkan navbar di bagian atas */
-  width: 100%; /* Mengatur lebar navbar 100% */
-  z-index: 1000; /* Menempatkan navbar di atas konten lainnya */
+  background-color: #192552; /* Menetapkan warna latar belakang untuk header */
+  color: white; /* Menetapkan warna teks untuk header */
+  position: fixed; /* Membuat header tetap di atas */
+  top: 0; /* Menyelaraskan ke bagian atas halaman */
+  width: 100%; /* Membuat header lebar penuh */
+  z-index: 1000; /* Memastikan header di atas elemen lainnya */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: space-between; /* Menyebarkan ruang antar item */
+  padding: 10px 20px; /* Menambahkan padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
 }
 
 nav {
-  display: flex; /* Menggunakan flexbox untuk tata letak */
-  align-items: center; /* Menyelaraskan item di tengah secara vertikal */
-}
-
-.logo-container {
-  margin-right: 20px; /* Jarak antara logo dan judul */
-}
-
-.title-container {
-  margin-right: 400px; /* Jarak antara judul dan item navbar */
-}
-
-nav h1 {
-  font-size: 20px; /* Ukuran font untuk judul */
-  margin: 0; /* Menghilangkan margin default */
-  color: white; /* Warna teks judul */
+  display: flex; /* Menggunakan flexbox untuk tata letak navigasi */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: space-between; /* Menyebarkan ruang antar item */
+  width: 100%; /* Membuat navigasi lebar penuh */
 }
 
 nav ul {
-  list-style-type: none; /* Menghilangkan bullet pada daftar */
-  padding: 0; /* Menghilangkan padding default */
-  margin: 0; /* Menghilangkan margin default */
-  display: flex; /* Menjadikan menu item sejajar secara horizontal */
+  list-style: none; /* Menghapus bullet point dari daftar */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  display: flex; /* Menggunakan flexbox untuk tata letak daftar */
+  margin-left: 20px; /* Memindahkan menu navigasi ke kiri */
+  margin-right: 100px;
 }
 
-nav li {
-  margin: 0 15px; /* Jarak antara item menu */
+nav ul li {
+  margin-left: 20px; /* Mengurangi margin antara item navigasi */
 }
 
-nav a {
-  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
-  color: white; /* Warna teks tautan */
-  font-weight: bold; /* Menggunakan huruf tebal untuk tautan */
+nav ul li a {
+  color: white; /* Menetapkan warna tautan */
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  font-size: 16px; /* Menetapkan ukuran font untuk tautan */
+  transition: color 0.3s ease; /* Transisi halus untuk perubahan warna saat hover */
 }
 
-nav a:hover {
-  color: black; /* Mengubah warna saat hover */
+nav ul li a:hover {
+  color: #8eaccd; /* Mengubah warna saat hover */
 }
 
-/* Memberikan padding pada konten agar tidak tertutup navbar */
+.logo-container img {
+  height: 50px; /* Menetapkan tinggi logo */
+}
+
+.title-container {
+  flex-grow: 1; /* Memungkinkan kontainer judul untuk tumbuh */
+  text-align: left; /* Menyelaraskan teks ke kiri */
+  margin-left: 20px; /* Memindahkan kontainer judul lebih dekat ke kiri */
+  color: #fff;
+}
+
+.title-container h1 {
+  margin: 0; /* Menghapus margin default dari judul */
+  font-size: 24px; /* Menetapkan ukuran font untuk judul */
+}
+
+.social-logo {
+    width: 30px; /* Menetapkan lebar logo */
+    height: 30px; /* Menetapkan tinggi logo */
+    vertical-align: middle; /* Menyelaraskan logo secara vertikal dengan teks */
+    margin-right: 10px; /* Menambahkan sedikit jarak di sebelah kanan logo */
+}
+
+
+/* Menambahkan padding pada konten agar tidak tertutup oleh header tetap */
 .content {
-  padding-top: 110px; /* Menambahkan jarak untuk menghindari tumpang tindih dengan navbar */
-  border-bottom: 5px solid #d2e0fb; /* Garis batas bawah konten */
-  padding-left: 10px; /* Jarak dalam konten di sebelah kiri */
-  border-left: 5px solid #192552; /* Garis batas kiri konten */
-  border-right: 5px solid #192552; /* Garis batas kanan konten */
-  background-color: #d2e0fb; /* Warna latar belakang konten */
+  padding-top: 50px; /* Menambahkan padding atas untuk menghindari tumpang tindih dengan header tetap */
+  margin: 20px; /* Menambahkan margin di sekitar konten */
 }
 
-/* Styling untuk galeri */
+/* Gaya untuk Bagian */
+section {
+  margin: 20px; /* Menambahkan margin di sekitar bagian */
+  padding: 20px; /* Menambahkan padding di dalam bagian */
+  background-color: #d2e0fb; /* Menetapkan warna latar belakang untuk bagian */
+  border-radius: 8px; /* Menambahkan sudut bulat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
+}
+
+ul {
+  padding-left: 20px; /* Menambahkan padding ke kiri pada daftar */
+}
+
 .gallery {
-  display: flex; /* Menggunakan flexbox untuk galeri */
-  flex-wrap: wrap; /* Membuat barisan baru otomatis */
-  justify-content: space-between; /* Menjaga jarak antar item */
-  margin-top: 20px; /* Jarak atas galeri */
+  display: flex; /* Menggunakan flexbox untuk tata letak galeri */
+  gap: 20px; /* Menambahkan jarak antar item galeri */
+  flex-wrap: wrap; /* Memungkinkan item untuk membungkus ke baris berikutnya */
 }
 
 .gallery-item {
-  flex: 1 1 calc(33.33% - 10px); /* Mengatur lebar item galeri menjadi 1/3 dari container */
-  margin-bottom: 15px; /* Jarak antar baris */
-  margin-right: 15px; /* Jarak antara item galeri */
-  border: 2px solid #192552; /* Menambahkan border */
-  border-radius: 8px; /* Sudut membulat */
-  padding: 10px; /* Ruang di dalam border */
-  background-color: #8eaccd; /* Warna latar belakang item galeri */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek kedalaman */
-}
-
-.gallery-item figure {
-  margin: 0; /* Menghilangkan margin pada figure */
+  flex: 1 1 calc(33.333% - 20px); /* Lebar responsif untuk item galeri */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
+  border-radius: 8px; /* Menambahkan sudut bulat */
+  overflow: hidden; /* Menyembunyikan konten yang melampaui */
+  background-color: #8eaccd; /* Menetapkan warna latar belakang untuk item galeri */
+  padding: 10px; /* Menambahkan padding di dalam item galeri */
+  text-align: center; /* Menyelaraskan teks di tengah */
 }
 
 .gallery-item img {
-  width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
-  height: auto; /* Mengatur tinggi gambar otomatis */
+  width: 100%; /* Membuat gambar lebar penuh kontainer */
+  height: auto; /* Mempertahankan rasio aspek */
 }
 
-.gallery-item figcaption {
-  text-align: center; /* Mengatur teks menjadi rata tengah */
-  margin-top: 10px; /* Jarak atas untuk figcaption */
-  font-style: italic; /* Mengatur gaya font menjadi italic */
+figcaption {
+  font-size: 16px; /* Menetapkan ukuran font untuk keterangan */
+  margin-top: 10px; /* Menambahkan margin ke atas keterangan */
 }
 
-/* Footer styling */
 footer {
   background-color: #192552; /* Warna latar belakang footer */
   color: white; /* Warna teks footer */
@@ -106,4 +128,24 @@ footer {
   padding: 10px 0; /* Jarak dalam footer */
   margin-top: auto; /* Mengatur margin atas otomatis */
   font-size: 0.9em; /* Ukuran font untuk footer */
+  width: 100%;
+}
+
+/* Media Query untuk responsif di mobile */
+@media (max-width: 768px) {
+  .gallery-item {
+      flex: 1 1 calc(50% - 20px); /* Mengatur ulang lebar untuk layar kecil */
+  }
+
+  .title-container h1 {
+      font-size: 18px; /* Mengatur ukuran font untuk layar kecil */
+  }
+
+  nav ul li {
+      margin-left: 5px; /* Menyesuaikan jarak untuk layar kecil */
+  }
+
+  nav ul li a {
+      font-size: 14px; /* Menyesuaikan ukuran font untuk layar kecil */
+  }
 }
