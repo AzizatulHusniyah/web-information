@@ -91,6 +91,9 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
 }
 
+ul {
+  padding-left: 20px; /* Menambahkan padding ke kiri pada daftar */
+}
 
 .gallery {
   display: flex; /* Menggunakan flexbox untuk tata letak galeri */
