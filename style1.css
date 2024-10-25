@@ -91,9 +91,6 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
 }
 
-ul {
-  padding-left: 20px; /* Menambahkan padding ke kiri pada daftar */
-}
 
 .gallery {
   display: flex; /* Menggunakan flexbox untuk tata letak galeri */
@@ -129,23 +126,4 @@ footer {
   margin-top: auto; /* Mengatur margin atas otomatis */
   font-size: 0.9em; /* Ukuran font untuk footer */
   width: 100%;
-}
-
-/* Media Query untuk responsif di mobile */
-@media (max-width: 768px) {
-  .gallery-item {
-      flex: 1 1 calc(50% - 20px); /* Mengatur ulang lebar untuk layar kecil */
-  }
-
-  .title-container h1 {
-      font-size: 18px; /* Mengatur ukuran font untuk layar kecil */
-  }
-
-  nav ul li {
-      margin-left: 5px; /* Menyesuaikan jarak untuk layar kecil */
-  }
-
-  nav ul li a {
-      font-size: 14px; /* Menyesuaikan ukuran font untuk layar kecil */
-  }
 }
