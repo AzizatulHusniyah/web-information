@@ -1,8 +1,3 @@
-// Tampilkan pesan selamat datang saat halaman dimuat
-window.onload = function() {
-    alert('Selamat datang di situs IMAGE UNESA!');
-};
-
 // Daftar gambar yang ingin Anda tampilkan di setiap gallery-item
 const galleryImages = {
     "gallery-image-1": [
